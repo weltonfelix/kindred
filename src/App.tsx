@@ -3,6 +3,7 @@ import { IoIosArrowDown as ArrowDown } from "react-icons/io";
 
 import "./global.css";
 import "./App.css";
+import Chapter from "./Chapter";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <ArrowDown color="#ffffff" size="32"/>
       </a>
     </main>
+    <Chapter id="chapter-1"/>
   </>
   );
 }

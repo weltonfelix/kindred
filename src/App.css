@@ -1,4 +1,19 @@
+::-webkit-scrollbar {
+  width: 13px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(250, 250, 250, .1);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(10, 10, 10, .3);
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(10, 10, 10, .6);
+}
+
 main#title {
+  position: relative;
   background: #c54747;
   color: #ffffff;
   height: 100vh;
