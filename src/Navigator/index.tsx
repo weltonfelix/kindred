@@ -21,7 +21,9 @@ const Navigator: React.FC<NavigatorProps> = ({
           <AiFillHome size="28" color="#c54747" />
         </a>
         {chapters.map((chapterId) => (
-          <a href={`#${chapterId}`} className="chapterNav" />
+          <a href={`#${chapterId}`} className="chapterNav">
+            <div />
+          </a>
         ))}
         <a href={`#${authorId}`}>
           <FaUserCircle size="28" color="#c54747" />
