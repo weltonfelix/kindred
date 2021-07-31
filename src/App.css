@@ -2,7 +2,8 @@
   display: none;
 }
 
-main#title, div#author {
+main#title,
+div#author {
   display: flex;
   height: 100%;
 }
@@ -11,7 +12,7 @@ main#title {
   position: relative;
   background: #c54747;
   color: #ffffff;
-  
+
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -83,18 +84,32 @@ div#author img {
 }
 
 footer {
-  background-color: #DDD;
+  background-color: #ddd;
   display: flex;
   align-items: center;
   justify-content: space-around;
   padding: 32px 16px 32px 16px;
 }
 
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+  }
+
+  footer div:first-child {
+    margin-bottom: 32px;
+  }
+
+  footer p {
+    text-align: center;
+  }
+}
+
 footer a {
   color: #c54747;
 }
 
-footer div p+p {
+footer div p + p {
   margin-top: 16px;
 }
 
