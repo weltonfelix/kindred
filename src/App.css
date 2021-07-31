@@ -81,3 +81,31 @@ div#author img {
     object-fit: cover;
   }
 }
+
+footer {
+  background-color: #DDD;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 32px 16px 32px 16px;
+}
+
+footer a {
+  color: #c54747;
+}
+
+footer div p+p {
+  margin-top: 16px;
+}
+
+.text-icon {
+  height: 1.5rem;
+  margin-right: 8px;
+  transform: translateY(0.4rem);
+}
+
+img.text-icon {
+  height: 1rem;
+  width: 1rem;
+  transform: translateY(0.1rem);
+}

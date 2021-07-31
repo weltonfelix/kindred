@@ -1,5 +1,5 @@
-import React from "react";
 import { IoIosArrowDown as ArrowDown } from "react-icons/io";
+import { BiCodeAlt } from "react-icons/bi";
 
 import Chapter from "./Chapter";
 import Navigator from "./Navigator";
@@ -24,14 +24,74 @@ function App() {
         <div>
           <h2>Sobre a autora</h2>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur
-            iste corporis nisi eum sequi provident natus facilis dolor, dicta
-            voluptas optio quo id ex itaque, sit laudantium omnis cupiditate
-            placeat!
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Consequatur iste corporis nisi eum sequi provident natus facilis
+            dolor, dicta voluptas optio quo id ex itaque, sit laudantium omnis
+            cupiditate placeat!
           </p>
         </div>
         <img src="octaviabutler.png" alt="Octavia Butler" />
       </div>
+      <footer>
+        <div>
+          <p>
+            Ilustrações por{" "}
+            <a
+              href="https://www.instagram.com/mh_drawing_/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Marcelo Henrique
+            </a>
+          </p>
+          <p>
+            Site por{" "}
+            <a
+              href="https://github.com/weltonfelix"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Welton Felix
+            </a>{" "}
+            e{" "}
+            <a
+              href="https://github.com/fabiopapais"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Fábio Papais
+            </a>
+          </p>
+        </div>
+        <div>
+          <p>
+            <BiCodeAlt className="text-icon" size="20" color="#c54747" />
+            Veja o{" "}
+            <a
+              href="https://github.com/weltonfelix/kindred"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              código fonte da página
+            </a>
+          </p>
+          <p>
+            <img
+              src="ifpeopensource.png"
+              alt="IFPE Open Source"
+              className="text-icon"
+            />
+            Conheça o{" "}
+            <a
+              href="https://www.ifpeopensource.com.br/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              IFPE Open Source
+            </a>
+          </p>
+        </div>
+      </footer>
     </>
   );
 }
