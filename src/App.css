@@ -66,3 +66,18 @@ div#author img {
   border-radius: 16px;
   width: 30%;
 }
+
+@media (max-width: 768px) {
+  div#author {
+    flex-direction: column;
+    padding: 0 16px 0 16px;
+  }
+
+  div#author img {
+    margin-top: 16px;
+    border-radius: 16px;
+    width: 100%;
+    max-height: 40%;
+    object-fit: cover;
+  }
+}
