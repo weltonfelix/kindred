@@ -6,7 +6,7 @@ interface ChapterProps {
 
 const Chapter: React.FC<ChapterProps> = ({ id }) => {
   return (
-    <div className="chapter" id={id} style={{ height: window.innerHeight }}>
+    <div className="chapter" id={id}>
       <h1>Chapter</h1>
     </div>
   );

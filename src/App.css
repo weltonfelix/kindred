@@ -2,11 +2,16 @@
   display: none;
 }
 
+main#title, div#author {
+  display: flex;
+  height: 100%;
+}
+
 main#title {
   position: relative;
   background: #c54747;
   color: #ffffff;
-  display: flex;
+  
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -38,4 +43,26 @@ main#title a p {
   font-weight: bold;
   color: #ffffff;
   margin-bottom: 0.5rem;
+}
+
+div#author {
+  align-items: center;
+  justify-content: center;
+  padding: 0 16% 0 16%;
+}
+
+div#author div {
+  margin-right: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+div#author div h2 {
+  font-size: 2rem;
+}
+
+div#author img {
+  border-radius: 16px;
+  width: 30%;
 }
