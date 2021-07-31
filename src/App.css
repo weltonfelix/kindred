@@ -104,7 +104,9 @@ footer div p+p {
   transform: translateY(0.4rem);
 }
 
-img.text-icon {
+span.text-icon {
+  background-image: url("ifpeopensource.png");
+  display: inline-block;
   height: 1rem;
   width: 1rem;
   transform: translateY(0.1rem);

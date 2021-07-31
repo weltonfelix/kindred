@@ -76,11 +76,7 @@ function App() {
             </a>
           </p>
           <p>
-            <img
-              src="ifpeopensource.png"
-              alt="IFPE Open Source"
-              className="text-icon"
-            />
+            <span className="text-icon" />
             Conheça o{" "}
             <a
               href="https://www.ifpeopensource.com.br/"
