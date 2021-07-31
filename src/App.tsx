@@ -10,8 +10,8 @@ import "./App.css";
 function App() {
   return (
     <>
-      <Navigator homeId="title" authorId="chapter-1" chapters={["chapter-1"]}/>
-      <main id="title">
+      <Navigator homeId="title" authorId="chapter-1" chapters={["chapter-1"]} />
+      <main id="title" style={{ height: window.innerHeight }}>
         <h1>Kindred</h1>
         <h3>Octavia Butler</h3>
         <a href="#chapter-1">
