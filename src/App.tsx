@@ -19,7 +19,9 @@ function App() {
           <ArrowDown color="#ffffff" size="32" />
         </a>
       </main>
-      <Chapter id="chapter-1" />
+      <Chapter id="chapter-1" bgImage="scene.jpeg">
+        <p>Chapter</p>
+      </Chapter>
       <div id="author">
         <div>
           <h2>Sobre a autora</h2>

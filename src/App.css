@@ -48,6 +48,7 @@ main#title a p {
 
 div#author {
   align-items: center;
+  background-color: #fff;
   justify-content: center;
   padding: 0 16% 0 16%;
 }
