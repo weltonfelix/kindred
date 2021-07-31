@@ -26,4 +26,5 @@ button {
 a {
   cursor: pointer;
   text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
 }
