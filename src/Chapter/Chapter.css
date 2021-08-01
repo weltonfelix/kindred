@@ -1,27 +1,6 @@
-div.chapter {
-  position: absolute;
+div.chapter-container {
+  scroll-snap-align: start;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   z-index: 1;
-}
-
-div.chapter-bg {
-  overflow-x: hidden;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-img.chapter-image {
-  position: relative;
-  height: 100%;
-}
-
-img.chapter-image-bg {
-  position: absolute;
-  width: 150%;
-  z-index: -10;
-  overflow: hidden;
-  filter: blur(16px);
 }
