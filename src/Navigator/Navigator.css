@@ -32,10 +32,6 @@ nav:hover {
   opacity: 1;
 }
 
-nav a {
-  text-decoration: none;
-}
-
 nav .nav-item {
   transition: 0.2s;
 }
