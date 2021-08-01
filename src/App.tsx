@@ -10,7 +10,17 @@ import "./App.css";
 function App() {
   return (
     <>
-      <Navigator homeId="title" authorId="author" chapters={["chapter-1"]} />
+      <Navigator
+        home={{
+          id: "title",
+          isActive: true,
+        }}
+        author={{
+          id: "author",
+          isActive: false,
+        }}
+        chapters={[{ id: "chapter-1", isActive: false }]}
+      />
       <main id="title">
         <h1>Kindred</h1>
         <h3>Octavia Butler</h3>
@@ -20,7 +30,7 @@ function App() {
         </a>
       </main>
       <Chapter id="chapter-1" bgImage="scene.jpeg">
-        <p>Chapterdodhdiagcavchakbcakchkvugviguhbjnfcgvhbnjkm</p>
+        <p>Chapter</p>
       </Chapter>
       <div id="author">
         <div>

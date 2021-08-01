@@ -1,32 +1,54 @@
-import { AiFillHome } from "react-icons/ai";
-import { FaUserCircle } from "react-icons/fa";
+import { AiFillHome, AiOutlineHome } from "react-icons/ai";
+import { FaUserCircle, FaRegUserCircle } from "react-icons/fa";
 
 import "./Navigator.css";
 
+type Chapter = {
+  isActive: boolean;
+  id: string;
+};
+
+type Home = {
+  isActive: boolean;
+  id: string;
+};
+
+type Author = {
+  isActive: boolean;
+  id: string;
+};
+
 interface NavigatorProps {
-  homeId: string;
-  authorId: string;
-  chapters: string[];
+  home: Home;
+  author: Author;
+  chapters: Chapter[];
 }
 
-const Navigator: React.FC<NavigatorProps> = ({
-  homeId,
-  authorId,
-  chapters,
-}) => {
+const Navigator: React.FC<NavigatorProps> = ({ home, author, chapters }) => {
   return (
     <>
       <nav>
-        <a href={`#${homeId}`}>
-          <AiFillHome size="28" color="#c54747" />
+        <a href={`#${home.id}`}>
+          {home.isActive ? (
+            <AiFillHome size="28" color="#c54747" className="nav-item" />
+          ) : (
+            <AiOutlineHome size="28" color="#c54747" className="nav-item" />
+          )}
         </a>
-        {chapters.map((chapterId) => (
-          <a href={`#${chapterId}`} className="chapterNav">
+        {chapters.map(({ id, isActive }) => (
+          <a
+            href={`#${id}`}
+            className={`nav-item chapterNav ${isActive ? "active" : ""}`}
+          >
             <div />
           </a>
         ))}
-        <a href={`#${authorId}`}>
-          <FaUserCircle size="28" color="#c54747" />
+        <a href={`#${author.id}`}>
+          {author.isActive ? (
+            <FaUserCircle size="28" color="#c54747" className="nav-item" />
+          ) : (
+            <FaRegUserCircle size="28" color="#c54747" className="nav-item" />
+          )}
         </a>
       </nav>
     </>
