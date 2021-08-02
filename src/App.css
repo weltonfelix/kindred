@@ -31,6 +31,7 @@ main#title {
 main#title h1 {
   font-size: 5rem;
 }
+
 main#title a {
   background-color: rgba(0, 0, 0, 0.1);
   border: none;
@@ -55,6 +56,31 @@ main#title a p {
   margin-bottom: 0.5rem;
 }
 
+main#title a svg {
+  margin-top: 8px;
+
+  -moz-animation: BounceAnimation 3s infinite;
+	-webkit-animation: BounceAnimation 3s infinite;
+	animation: BounceAnimation 3s infinite;
+}
+
+#chapter-1-content {
+  width: 100%;
+  height: 100%;
+  margin: 15px 0;
+
+  background-color: #ffffffa1;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+#chapter-1-content img {
+  width: 40%;
+}
+
+
+
+
 div#author {
   display: flex;
   height: 85%;
@@ -62,7 +88,7 @@ div#author {
   align-items: center;
   background-color: #fff;
   justify-content: center;
-  padding: 0 16% 0 16%;
+  padding: 0 10% 0 10%;
 }
 
 div#author div {
@@ -102,7 +128,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 32px 16px 32px 16px;
+  padding: 32px 0 32px 0;
   height: 15%;
 }
 

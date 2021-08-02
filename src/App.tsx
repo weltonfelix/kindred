@@ -4,8 +4,6 @@ import { BiCodeAlt } from "react-icons/bi";
 import Chapter from "./Chapter";
 import Navigator from "./Navigator";
 
-import scene from '/images/scene.jpeg'
-
 import "./global.css";
 import "./App.css";
 
@@ -42,6 +40,11 @@ function App() {
           title="Primeira Viagem"
           colors={["#c54747", "#c8c52d"]}
         >
+          <div id="chapter-1-content">
+            <div className="image-text-block">
+              <img src="assets/images/chapter-1/scene1.png" alt="Scene 1" />
+            </div>
+          </div>
         </Chapter>
         <Chapter
           id="chapter-2"

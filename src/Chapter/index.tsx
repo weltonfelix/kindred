@@ -18,7 +18,7 @@ const Chapter: React.FC<ChapterProps> = ({ children, id, title, colors }) => {
     >
       <div className="chapter">
         {title && <h1 className="chapter-title">{title}</h1>}
-        {children}
+          {children}
       </div>
     </div>
   );
