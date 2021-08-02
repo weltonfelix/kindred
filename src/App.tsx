@@ -4,6 +4,8 @@ import { BiCodeAlt } from "react-icons/bi";
 import Chapter from "./Chapter";
 import Navigator from "./Navigator";
 
+import scene from '/images/scene.jpeg'
+
 import "./global.css";
 import "./App.css";
 
@@ -19,7 +21,10 @@ function App() {
           id: "author",
           isActive: false,
         }}
-        chapters={[{ id: "chapter-1", isActive: false }]}
+        chapters={[
+          { id: "chapter-1", isActive: false },
+          { id: "chapter-2", isActive: false },
+        ]}
       />
       <div id="container">
         <div className="snap-section">
@@ -32,9 +37,17 @@ function App() {
             </a>
           </main>
         </div>
-        <Chapter id="chapter-1">
-          <p>Chapter</p>
+        <Chapter
+          id="chapter-1"
+          title="Primeira Viagem"
+          colors={["#c54747", "#c8c52d"]}
+        >
         </Chapter>
+        <Chapter
+          id="chapter-2"
+          title="Segunda Viagem"
+          colors={["#6ee087", "#2dc3c8"]}
+        ></Chapter>
         <div className="snap-section">
           <div id="author">
             <div>
