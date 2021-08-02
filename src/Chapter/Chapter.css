@@ -6,9 +6,9 @@ div.chapter-container {
 
   scroll-snap-align: start;
 
-  -webkit-animation: BackgroundPositionAnimation 5s ease infinite;
-  -moz-animation: BackgroundPositionAnimation 5s ease infinite;
-  animation: BackgroundPositionAnimation 5s ease infinite;
+  -webkit-animation: BackgroundPositionAnimation 20s ease infinite;
+  -moz-animation: BackgroundPositionAnimation 20s ease infinite;
+  animation: BackgroundPositionAnimation 20s ease infinite;
 }
 
 h1.chapter-title {

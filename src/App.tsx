@@ -38,7 +38,7 @@ function App() {
         <Chapter
           id="chapter-1"
           title="Primeira Viagem"
-          colors={["#c54747", "#c8c52d"]}
+          colors={["#c54747", "#c85e2d"]}
         >
           <div id="chapter-1-content">
             <div className="image-text-block">
@@ -49,7 +49,7 @@ function App() {
         <Chapter
           id="chapter-2"
           title="Segunda Viagem"
-          colors={["#6ee087", "#2dc3c8"]}
+          colors={["#6ee087", "#2dc894"]}
         ></Chapter>
         <div className="snap-section">
           <div id="author">
