@@ -40,11 +40,7 @@ function App() {
           title="Primeira Viagem"
           colors={["#c54747", "#c85e2d"]}
         >
-          <div id="chapter-1-content">
-            <div className="image-text-block">
-              <img src="assets/images/chapter-1/scene1.png" alt="Scene 1" />
-            </div>
-          </div>
+          
         </Chapter>
         <Chapter
           id="chapter-2"

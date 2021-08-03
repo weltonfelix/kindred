@@ -1,29 +1,100 @@
 div.chapter-container {
   width: 100%;
   height: 100vh;
-  padding: 2.5% 10% 0 10%;
   z-index: 1;
+
+  padding: 3% 8% 3% 8%;
 
   scroll-snap-align: start;
 
-  -webkit-animation: BackgroundPositionAnimation 20s ease infinite;
-  -moz-animation: BackgroundPositionAnimation 20s ease infinite;
-  animation: BackgroundPositionAnimation 20s ease infinite;
+  -webkit-animation: BackgroundPositionAnimation 10s ease infinite;
+  -moz-animation: BackgroundPositionAnimation 10s ease infinite;
+  animation: BackgroundPositionAnimation 10s ease infinite;
+}
+
+.chapter {
+  height: 100%;
 }
 
 h1.chapter-title {
   font-size: 3rem;
   color: #ffffff;
+  padding-bottom: 3%;
+}
+
+div.chapter-content {
+  display: grid;
+  grid-template-columns: 55% 42%;
+  gap: 3%;
+
+  width: 100%;
+}
+
+div.chapter-content .chapter-carousel {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 8px;
+}
+
+div.chapter-content .chapter-carousel img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+div.chapter-content .chapter-texts {
+  background-color: #ffffff96;
+  border-radius: 8px;
+  width: 100%;
+  max-height: 80vh;
+  overflow-y: scroll;
+}
+div.chapter-content .chapter-texts .texts-container {
+  margin: 35px;
+}
+
+div.chapter-content .chapter-texts p {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: rgb(82, 82, 82);
+}
+
+div.chapter-content .chapter-texts p + p {
+  margin-top: 20px;
+}
+
+div.chapter-content .chapter-texts p.active {
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #000000;
+  transition: 1s;
 }
 
 @media (max-width: 768px) {
   div.chapter-container {
-    padding: 4% 5% 0 5%;
+    padding: 4% 5% 4% 5%;
   }
 
   h1.chapter-title {
     font-size: 2.5rem;
     text-align: center;
-    padding: 10% 0 0 0;
+    padding: 3% 0 3% 0;
+  }
+
+  div.chapter-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  div.chapter-content .chapter-carousel {
+    height: auto;
+    width: auto;
+  }
+
+  div.chapter-content .chapter-texts {
+    height: 35%;
   }
 }
