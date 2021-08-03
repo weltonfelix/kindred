@@ -32,8 +32,8 @@ const Chapter: React.FC<ChapterProps> = ({ children, id, title, colors }) => {
               showStatus={false}
               showIndicators={false}
             >
-              <img src="assets/images/chapter-1/scene1.png" />
-              <img src="/assets/images/chapter-1/scene2.jpeg" />
+              <img src="assets/images/chapter-1/scene1.png" alt="Scene1" />
+              <img src="/assets/images/chapter-1/scene2.jpeg" alt="Scene2" />
             </Carousel>
           </div>
           <div className="chapter-texts">
