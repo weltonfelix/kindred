@@ -3,6 +3,7 @@ import "./Chapter.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import { useState } from "react";
+import { useEffect } from "react";
 
 interface ChapterProps {
   id?: string;
@@ -12,19 +13,36 @@ interface ChapterProps {
   texts: string[];
 }
 
-const Chapter: React.FC<ChapterProps> = ({ id, colors, title, images, texts }) => {
-  const [textsActiveList, setTextsActiveList] = useState(["active", ...(Array(images.length - 1).fill(""))])
+const Chapter: React.FC<ChapterProps> = ({
+  id,
+  colors,
+  title,
+  images,
+  texts,
+}) => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [textsActiveList, setTextsActiveList] = useState([
+    "active",
+    ...Array(images.length - 1).fill(""),
+  ]);
+
+  useEffect(() => {
+    let newTextList = textsActiveList.map((text, text_index) => {
+      if (text_index === currentImageIndex) {
+        return "active";
+      } else if (text === "active") {
+        return "";
+      } else return "";
+    });
+    setTextsActiveList(newTextList);
+  }, [currentImageIndex]);
 
   function updateCurrentImage(index: number) {
-    let newTextList: string[] = textsActiveList.map((text, text_index) => {
-      if (text === 'active') {
-        return ""
-      } else if (text_index === index) {
-        return "active"
-      } else return ""
-    })
-    console.log(newTextList)
-    setTextsActiveList(newTextList)
+    setCurrentImageIndex(index);
+  }
+
+  function handleTextClick(index: number) {
+    updateCurrentImage(index)
   }
 
   return (
@@ -52,13 +70,20 @@ const Chapter: React.FC<ChapterProps> = ({ id, colors, title, images, texts }) =
               showIndicators={false}
               dynamicHeight={true}
               onChange={updateCurrentImage}
+              selectedItem={currentImageIndex}
             >
-              {images.map((url, index) => <img src={url} alt={`scene-${index}`} /> )}
+              {images.map((url, index) => (
+                <img src={url} alt={`scene-${index}`} />
+              ))}
             </Carousel>
           </div>
           <div className="chapter-texts">
             <div className="texts-container">
-              {texts.map((text, index) => <p className={textsActiveList[index]} id={`${index}`}>{text}</p>)}
+              {texts.map((text, index) => (
+                <p className={textsActiveList[index]} id={`${index}`} onClick={() => handleTextClick(index)}>
+                  {text}
+                </p>
+              ))}
             </div>
           </div>
         </div>
