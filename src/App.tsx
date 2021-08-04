@@ -26,6 +26,9 @@ function App() {
       />
       <div id="container">
         <div className="snap-section">
+          <header className="instructions">
+            <p>Tenha uma melhor experiência no computador, apertando F11</p>
+          </header>
           <main id="title">
             <h1>Kindred</h1>
             <h3>Octavia Butler</h3>
@@ -39,9 +42,7 @@ function App() {
           id="chapter-1"
           title="Primeira Viagem"
           colors={["#c54747", "#c85e2d"]}
-        >
-          
-        </Chapter>
+        ></Chapter>
         <Chapter
           id="chapter-2"
           title="Segunda Viagem"

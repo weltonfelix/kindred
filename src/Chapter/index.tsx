@@ -31,6 +31,7 @@ const Chapter: React.FC<ChapterProps> = ({ children, id, title, colors }) => {
               showThumbs={false}
               showStatus={false}
               showIndicators={false}
+              dynamicHeight={true}
             >
               <img src="assets/images/chapter-1/scene1.png" alt="Scene1" />
               <img src="/assets/images/chapter-1/scene2.jpeg" alt="Scene2" />
@@ -38,26 +39,19 @@ const Chapter: React.FC<ChapterProps> = ({ children, id, title, colors }) => {
           </div>
           <div className="chapter-texts">
             <div className="texts-container">
-              <p className="active">
+              <p id="1" className="active">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ullamcorper morbi tincidunt ornare massa eget egestas purus
                 viverra. Justo eget magna fermentum iaculis. Leo duis ut diam
                 quam nulla porttitor massa.
               </p>
-              <p>
+              <p id="2">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ullamcorper morbi tincidunt ornare massa eget egestas purus
                 viverra. Justo eget magna fermentum iaculis. Leo duis ut diam
                 quam nulla porttitor massa.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ullamcorper morbi tincidunt ornare massa eget egestas purus
-                viverra. Justo eget magna fermentum iaculis. Leo duis ut diam
-                quam nulla porttitor massa. 
               </p>
             </div>
           </div>
