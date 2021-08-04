@@ -1,0 +1,34 @@
+[
+    {
+        "id": "chapter-1",
+        "title": "Primeira Viagem",
+        "images": [
+            "assets/images/chapter-1/scene1.png",
+            "/assets/images/chapter-1/scene2.jpeg"
+        ],
+        "texts": [
+            "Confesso que fiquei triste, porque ele era um ídolo para mim. Não vou dizer que chorei porque estaria mentindo. Nosso agronegócio continua pujante e, acima de tudo, possuindo e respeitando a melhor legislação ambiental do planeta. Eu ganhei!",
+            "Somos um país cristão. Não existe essa historinha de Estado laico, não. O Estado é cristão. Vamos fazer o Brasil para as maiorias. As minorias têm que se curvar às maiorias. As minorias se adequam ou simplesmente desaparecem. (a vacina) NÃO SERÁ COMPRADA."
+        ],
+        "colors": [
+            "#c54747",
+            "#c85e2d"
+        ]
+    },
+    {
+        "id": "chapter-2",
+        "title": "Segunda Viagem",
+        "images": [
+            "assets/images/chapter-1/scene1.png",
+            "/assets/images/chapter-1/scene2.jpeg"
+        ],
+        "texts": [
+            "Aquela recomendação, sabe: fique em casa. Lembra que eu falava: tem que tratar do vírus e da economia.  Olha o problema aí. Tudo o que acontece na América do Sul a gente se preocupa.",
+            "Todo mundo gostaria de passar a tarde com um príncipe. Principalmente vocês, mulheres. Eu desliguei o aquecedor da piscina olímpica do Alvorada, modificamos o cardápio, mas isso não tem nada a ver.  Entre um homem e uma mulher jovem, o que o empresário pensa?"
+        ],
+        "colors": [
+            "#6ee087",
+            "#2dc894"
+        ]
+    }
+]

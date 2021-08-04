@@ -2,14 +2,31 @@ import "./Chapter.css";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
+import { useState } from "react";
 
 interface ChapterProps {
   id?: string;
-  title?: string;
   colors?: string[];
+  title?: string;
+  images: string[];
+  texts: string[];
 }
 
-const Chapter: React.FC<ChapterProps> = ({ children, id, title, colors }) => {
+const Chapter: React.FC<ChapterProps> = ({ id, colors, title, images, texts }) => {
+  const [textsActiveList, setTextsActiveList] = useState(["active", ...(Array(images.length - 1).fill(""))])
+
+  function updateCurrentImage(index: number) {
+    let newTextList: string[] = textsActiveList.map((text, text_index) => {
+      if (text === 'active') {
+        return ""
+      } else if (text_index === index) {
+        return "active"
+      } else return ""
+    })
+    console.log(newTextList)
+    setTextsActiveList(newTextList)
+  }
+
   return (
     <div
       id={id}
@@ -28,31 +45,20 @@ const Chapter: React.FC<ChapterProps> = ({ children, id, title, colors }) => {
             <Carousel
               emulateTouch={true}
               infiniteLoop={true}
+              autoPlay={true}
+              interval={5000}
               showThumbs={false}
               showStatus={false}
               showIndicators={false}
               dynamicHeight={true}
+              onChange={updateCurrentImage}
             >
-              <img src="assets/images/chapter-1/scene1.png" alt="Scene1" />
-              <img src="/assets/images/chapter-1/scene2.jpeg" alt="Scene2" />
+              {images.map((url, index) => <img src={url} alt={`scene-${index}`} /> )}
             </Carousel>
           </div>
           <div className="chapter-texts">
             <div className="texts-container">
-              <p id="1" className="active">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ullamcorper morbi tincidunt ornare massa eget egestas purus
-                viverra. Justo eget magna fermentum iaculis. Leo duis ut diam
-                quam nulla porttitor massa.
-              </p>
-              <p id="2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ullamcorper morbi tincidunt ornare massa eget egestas purus
-                viverra. Justo eget magna fermentum iaculis. Leo duis ut diam
-                quam nulla porttitor massa.
-              </p>
+              {texts.map((text, index) => <p className={textsActiveList[index]} id={`${index}`}>{text}</p>)}
             </div>
           </div>
         </div>

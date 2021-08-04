@@ -7,6 +7,8 @@ import Navigator from "./Navigator";
 import "./global.css";
 import "./App.css";
 
+import chaptersContent from "./chapters.json";
+
 function App() {
   return (
     <>
@@ -38,16 +40,15 @@ function App() {
             </a>
           </main>
         </div>
-        <Chapter
-          id="chapter-1"
-          title="Primeira Viagem"
-          colors={["#c54747", "#c85e2d"]}
-        ></Chapter>
-        <Chapter
-          id="chapter-2"
-          title="Segunda Viagem"
-          colors={["#6ee087", "#2dc894"]}
-        ></Chapter>
+        {chaptersContent.map((chapter) => (
+          <Chapter
+            id={chapter.id}
+            title={chapter.title}
+            colors={chapter.colors}
+            images={chapter.images}
+            texts={chapter.texts}
+          ></Chapter>
+        ))}
         <div className="snap-section">
           <div id="author">
             <div>

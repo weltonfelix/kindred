@@ -50,6 +50,7 @@ div.chapter-content .chapter-carousel img {
 div.chapter-content .chapter-texts {
   background-color: #ffffffd3;
   border-radius: 8px;
+  box-shadow: 1px 1px 100px rgba(0, 0, 0, 0.404);
 
   height: fit-content;
   max-height: 70vh; /* yeah... kind of risky */
@@ -58,12 +59,23 @@ div.chapter-content .chapter-texts {
 
 div.chapter-content .chapter-texts .texts-container {
   font-size: 1.5rem;
+  font-family: Roboto, sans-serif;
+  color: #b9b9b9;
   padding: 10%;
   overflow-y: scroll;
+
+  transition: 0.5s;
 }
 
 div.chapter-content .chapter-texts .texts-container p + p {
   margin-top: 10%;
+}
+
+div.chapter-content .chapter-texts .texts-container .active {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #000;
+  transition: 0.5s;
 }
 
 @media (max-width: 768px) {
@@ -94,8 +106,11 @@ div.chapter-content .chapter-texts .texts-container p + p {
   }
 
   div.chapter-content .chapter-texts .texts-container {
-    font-size: 1.3rem;
-    font-family: Roboto, sans-serif;
+    font-size: 1rem;
     font-weight: 500;
+  }
+
+  div.chapter-content .chapter-texts .texts-container .active {
+    font-size: 1.2rem;
   }
 }
