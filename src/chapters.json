@@ -3,40 +3,106 @@
         "id": "chapter-1",
         "title": "Primeira Viagem",
         "images": [
-            "assets/images/chapter-1/scene1.png",
-            "/assets/images/chapter-1/scene2.jpeg",
-            "/assets/images/chapter-1/scene2.jpeg",
-            "/assets/images/chapter-1/scene2.jpeg"
+            "/assets/images/chapter-1/scene1.png",
+            "/assets/images/chapter-1/scene2.png"
         ],
         "texts": [
-            "Confesso que fiquei triste, porque ele era um ídolo para mim. Não vou dizer que chorei porque estaria mentindo. Nosso agronegócio continua pujante e, acima de tudo, possuindo e respeitando a melhor legislação ambiental do planeta. Eu ganhei!",
-            "Somos um país cristão. Não existe essa historinha de Estado laico, não. O Estado é cristão. Vamos fazer o Brasil para as maiorias. As minorias têm que se curvar às maiorias. As minorias se adequam ou simplesmente desaparecem. (a vacina) NÃO SERÁ COMPRADA.",
-            "Somos um país cristão. Não existe essa historinha de Estado laico, não. O Estado é cristão. Vamos fazer o Brasil para as maiorias. As minorias têm que se curvar às maiorias. As minorias se adequam ou simplesmente desaparecem. (a vacina) NÃO SERÁ COMPRADA.",
-            "Somos um país cristão. Não existe essa historinha de Estado laico, não. O Estado é cristão. Vamos fazer o Brasil para as maiorias. As minorias têm que se curvar às maiorias. As minorias se adequam ou simplesmente desaparecem. (a vacina) NÃO SERÁ COMPRADA."
+            "Texto imagem 1",
+            "Texto imagem 2"
         ],
         "colors": [
-            "#c54747",
-            "#c85e2d"
+            "#9E966D",
+            "#017C9A"
         ],
-        "audio": "/assets/example.mp3",
-        "sectionTime": 25000
+        "audio": "/assets/audios/example.mp3",
+        "sectionTime": 14000
     },
     {
         "id": "chapter-2",
         "title": "Segunda Viagem",
         "images": [
-            "assets/images/chapter-1/scene1.png",
-            "/assets/images/chapter-1/scene2.jpeg"
+            "/assets/images/chapter-2/scene1.png",
+            "/assets/images/chapter-2/scene2.png"
         ],
         "texts": [
-            "Aquela recomendação, sabe: fique em casa. Lembra que eu falava: tem que tratar do vírus e da economia.  Olha o problema aí. Tudo o que acontece na América do Sul a gente se preocupa.",
-            "Todo mundo gostaria de passar a tarde com um príncipe. Principalmente vocês, mulheres. Eu desliguei o aquecedor da piscina olímpica do Alvorada, modificamos o cardápio, mas isso não tem nada a ver.  Entre um homem e uma mulher jovem, o que o empresário pensa?"
+            "Texto imagem 1",
+            "Texto imagem 2"
         ],
         "colors": [
-            "#6ee087",
+            "#C86800",
+            "#471A00"
+        ],
+        "audio": "/assets/audios/example.mp3",
+        "sectionTime": 14000
+    },
+    {
+        "id": "chapter-3",
+        "title": "Terceira Viagem",
+        "images": [
+            "/assets/images/chapter-3/scene1.png",
+            "/assets/images/chapter-3/scene2.png"
+        ],
+        "texts": [
+            "Texto imagem 1",
+            "Texto imagem 2"
+        ],
+        "colors": [
+            "#159407",
+            "#3f9afc"
+        ],
+        "audio": "/assets/audios/example.mp3",
+        "sectionTime": 14000
+    },
+    {
+        "id": "chapter-4",
+        "title": "Quarta Viagem",
+        "images": [
+            "/assets/images/chapter-4/scene1.png"
+        ],
+        "texts": [
+            "Texto imagem 1"
+        ],
+        "colors": [
+            "#89421E",
+            "#e59d79"
+        ],
+        "audio": "/assets/audios/example.mp3",
+        "sectionTime": 8000
+    },
+    {
+        "id": "chapter-5",
+        "title": "Quinta Viagem",
+        "images": [
+            "/assets/images/chapter-5/scene1.png",
+            "/assets/images/chapter-5/scene2.jpeg"
+        ],
+        "texts": [
+            "Texto imagem 1",
+            "Texto imagem 2"
+        ],
+        "colors": [
+            "#693100",
             "#2dc894"
         ],
-        "audio": "/assets/example.mp3",
-        "sectionTime": 25000
+        "audio": "/assets/audios/example.mp3",
+        "sectionTime": 16000
+    },
+    {
+        "id": "chapter-6",
+        "title": "Sexta Viagem",
+        "images": [
+            "/assets/images/chapter-6/scene1.png",
+            "/assets/images/chapter-6/scene2.jpeg"
+        ],
+        "texts": [
+            "Texto imagem 1",
+            "Texto imagem 2"
+        ],
+        "colors": [
+            "#791E00",
+            "#2dc894"
+        ],
+        "audio": "/assets/audios/example.mp3",
+        "sectionTime": 16000
     }
 ]

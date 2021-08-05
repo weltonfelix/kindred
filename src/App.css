@@ -72,9 +72,6 @@ main#title a svg {
 	animation: BounceAnimation 3s infinite;
 }
 
-
-
-
 div#author {
   display: flex;
   height: 85%;
@@ -86,15 +83,31 @@ div#author {
 }
 
 div#author div {
+  width: 50%;
   margin-right: 64px;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 10px;
+}
+
+div#author div p {
+  font-family: Roboto;
 }
 
 div#author div h2 {
   font-size: 2rem;
-} 
+  margin-bottom: 25px;
+}
+
+div#author div #citation {
+  margin-top: 5px;
+}  
+
+div#author div #citation i {
+  font-weight: 400;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
 
 div#author img {
   border-radius: 16px;
@@ -139,6 +152,19 @@ footer {
   footer p {
     text-align: center;
   }
+
+  div#author div {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+    gap: 10px;
+  }
+
+  div#author div h2 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+  } 
+  
 }
 
 footer a {

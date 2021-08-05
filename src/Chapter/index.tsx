@@ -55,7 +55,7 @@ const Chapter: React.FC<ChapterProps> = ({
 
   function changeChapterVisibility(state: boolean) {
     setChapterVisibility(state);
-    console.log(`Visibilidade da ${title}: ${state}`);
+    console.info(`Visibilidade da ${title}: ${state}`);
   }
 
   return (
@@ -66,7 +66,6 @@ const Chapter: React.FC<ChapterProps> = ({
         playing={chapterVisibility}
       />
       <VisibilitySensor
-        intervalDelay={1000}
         onChange={(event) => changeChapterVisibility(event)}
       >
         <div

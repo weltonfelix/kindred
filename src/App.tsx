@@ -8,8 +8,15 @@ import "./global.css";
 import "./App.css";
 
 import chaptersContent from "./chapters.json";
+import { useState } from "react";
 
 function App() {
+  const [scrollLock, setScrollLock] = useState(true);
+
+  function enableScroll() {
+    setScrollLock(false);
+  }
+
   return (
     <>
       <Navigator
@@ -19,14 +26,22 @@ function App() {
         }}
         author={{
           id: "author",
-          isActive: false,
+          isActive: true,
         }}
         chapters={[
           { id: "chapter-1", isActive: false },
           { id: "chapter-2", isActive: false },
+          { id: "chapter-3", isActive: false },
+          { id: "chapter-4", isActive: false },
+          { id: "chapter-5", isActive: false },
+          { id: "chapter-6", isActive: false },
         ]}
       />
-      <div id="container">
+      <div
+        onClick={enableScroll}
+        style={{ overflow: `${scrollLock ? "hidden" : "scroll"}` }}
+        id="container"
+      >
         <div className="snap-section">
           <header className="instructions">
             <p>Tenha uma melhor experiência no computador, apertando F11</p>
@@ -34,7 +49,7 @@ function App() {
           <main id="title">
             <h1>Kindred</h1>
             <h3>Octavia Butler</h3>
-            <a href="#chapter-1">
+            <a onClick={enableScroll} href="#chapter-1">
               <p>Começar</p>
               <ArrowDown color="#ffffff" size="32" />
             </a>
@@ -50,18 +65,21 @@ function App() {
             texts={chapter.texts}
             audio={chapter.audio}
             sectionTime={chapter.sectionTime}
-          ></Chapter>
+          />
         ))}
         <div className="snap-section">
           <div id="author">
             <div>
               <h2>Sobre a autora</h2>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Consequatur iste corporis nisi eum sequi provident natus facilis
-                dolor, dicta voluptas optio quo id ex itaque, sit laudantium
-                omnis cupiditate placeat!
+                <b>Octavia Estelle Butler</b> foi uma escritora conhecida por
+                seus livros de ficção científica, e mais especialmente por
+                retratar e mostrar o preconceito, o racismo e o feminismo m suas
+                obras. Entre suas obras mais conhecidas destacam-se:{" "}
+                <i>Kindred</i>, <i>The Patternist Series</i>,
+                <i>The Xenogenesis Series</i> e <i>Parable</i>.
               </p>
+              <p id="citation"><i>"Comecei a escrever sobre poder já que eu tinha tão pouco dele"</i> - Octavia E. Butler, “The Science Fiction of Octavia Butler”</p> 
             </div>
             <img src="octaviabutler.png" alt="Octavia Butler" />
           </div>
