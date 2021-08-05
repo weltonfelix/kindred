@@ -62,7 +62,7 @@ const Chapter: React.FC<ChapterProps> = ({
     <>
       <ReactHowler
         src={`${audio}`}
-        format={["mp3"]}
+        format={["mp3", "mpeg"]}
         playing={chapterVisibility}
         loop={true}
       />

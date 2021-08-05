@@ -50,7 +50,7 @@
             "#159407",
             "#3f9afc"
         ],
-        "audio": "/assets/audios/example.mp3",
+        "audio": "/assets/audios/terceira.mp3",
         "sectionTime": 14000
     },
     {
@@ -102,7 +102,7 @@
             "#791E00",
             "#2dc894"
         ],
-        "audio": "/assets/audios/example.mp3",
+        "audio": "/assets/audios/sexta.mpeg",
         "sectionTime": 16000
     }
 ]
