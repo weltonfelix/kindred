@@ -64,6 +64,7 @@ const Chapter: React.FC<ChapterProps> = ({
         src={`${audio}`}
         format={["mp3"]}
         playing={chapterVisibility}
+        loop={true}
       />
       <VisibilitySensor
         onChange={(event) => changeChapterVisibility(event)}
