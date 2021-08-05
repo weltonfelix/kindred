@@ -35,8 +35,9 @@ const Navigator: React.FC<NavigatorProps> = ({ home, author, chapters }) => {
             <AiOutlineHome size="28" color="#c54747" className="nav-item" />
           )}
         </a>
-        {chapters.map(({ id, isActive }) => (
+        {chapters.map(({ id, isActive }, index) => (
           <a
+            key={index}
             href={`#${id}`}
             className={`nav-item chapterNav ${isActive ? "active" : ""}`}
           >

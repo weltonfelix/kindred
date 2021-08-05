@@ -40,13 +40,16 @@ function App() {
             </a>
           </main>
         </div>
-        {chaptersContent.map((chapter) => (
+        {chaptersContent.map((chapter, index) => (
           <Chapter
+            key={index}
             id={chapter.id}
             title={chapter.title}
             colors={chapter.colors}
             images={chapter.images}
             texts={chapter.texts}
+            audio={chapter.audio}
+            sectionTime={chapter.sectionTime}
           ></Chapter>
         ))}
         <div className="snap-section">

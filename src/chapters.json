@@ -17,7 +17,9 @@
         "colors": [
             "#c54747",
             "#c85e2d"
-        ]
+        ],
+        "audio": "/assets/example.mp3",
+        "sectionTime": 25000
     },
     {
         "id": "chapter-2",
@@ -33,6 +35,8 @@
         "colors": [
             "#6ee087",
             "#2dc894"
-        ]
+        ],
+        "audio": "/assets/example.mp3",
+        "sectionTime": 25000
     }
 ]
