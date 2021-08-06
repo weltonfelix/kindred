@@ -54,7 +54,6 @@ const Chapter: React.FC<ChapterProps> = ({
 
   function changeChapterVisibility(state: boolean) {
     setChapterVisibility(state);
-    console.info(`Visibilidade da ${title}: ${state}`);
   }
 
   return (
