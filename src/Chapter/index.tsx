@@ -23,7 +23,7 @@ const Chapter: React.FC<ChapterProps> = ({
   images,
   texts,
   audio,
-  sectionTime
+  sectionTime,
 }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [textsActiveList, setTextsActiveList] = useState([
@@ -31,7 +31,6 @@ const Chapter: React.FC<ChapterProps> = ({
     ...Array(images.length - 1).fill(""),
   ]);
   const [chapterVisibility, setChapterVisibility] = useState(false);
-
 
   useEffect(() => {
     let newTextList = textsActiveList.map((text, text_index) => {
@@ -42,7 +41,7 @@ const Chapter: React.FC<ChapterProps> = ({
       } else return "";
     });
     setTextsActiveList(newTextList);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentImageIndex]);
 
   function updateCurrentImage(index: number) {
@@ -63,12 +62,13 @@ const Chapter: React.FC<ChapterProps> = ({
       <ReactHowler
         src={`${audio}`}
         format={["mp3", "mpeg"]}
+        preload={false}
+        onLoad={() => console.log("oi")}
+        onLoadError={() => console.log("oi")}
         playing={chapterVisibility}
         loop={true}
       />
-      <VisibilitySensor
-        onChange={(event) => changeChapterVisibility(event)}
-      >
+      <VisibilitySensor onChange={(event) => changeChapterVisibility(event)}>
         <div
           id={id}
           className="chapter-container"
@@ -87,7 +87,7 @@ const Chapter: React.FC<ChapterProps> = ({
                   emulateTouch={true}
                   infiniteLoop={true}
                   autoPlay={true}
-                  interval={sectionTime ? (sectionTime / images.length) : 5000}
+                  interval={sectionTime ? sectionTime / images.length : 5000}
                   showThumbs={false}
                   showStatus={false}
                   showIndicators={false}
