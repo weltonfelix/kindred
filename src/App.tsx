@@ -98,19 +98,19 @@ function App() {
               <p>
                 Site por{" "}
                 <a
-                  href="https://github.com/weltonfelix"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Welton Felix
-                </a>{" "}
-                e{" "}
-                <a
                   href="https://github.com/fabiopapais"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Fábio Papais
+                </a>{" "}
+                e{" "}
+                <a
+                  href="https://github.com/weltonfelix"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Welton Felix
                 </a>
               </p>
             </div>
