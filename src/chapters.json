@@ -1,4 +1,5 @@
 [
+<<<<<<< HEAD
     {
         "id": "chapter-1",
         "title": "Primeira Viagem",
@@ -104,3 +105,88 @@
         "sectionTime": 16000
     }
 ]
+=======
+  {
+    "id": "chapter-1",
+    "title": "Primeira Viagem",
+    "images": [
+      "/assets/images/chapter-1/scene1.jpeg",
+      "/assets/images/chapter-1/scene2.jpeg"
+    ],
+    "texts": [
+      "Dana é uma jovem escritora que mora em Los Angeles, nos Estados Unidos, no ano de 1976. Certo dia, Dana começa a passar mal e, embora tenha sido inicialmente socorrida por seu marido, Kevin, acaba desmaiando. O que Dana não esperava era acordar em um local totalmente diferente de sua casa, ao lado de um lago.",
+      "Dana observa uma garoto, que mais tarde seria conhecido como Rufus, se afogando no lago. Rapidamente, ela o salva, sendo surpreendida pela mãe do garoto, que agia de forma agressiva e desesperada. Ela não entende as roupas diferentes e aparentemente de época que a mãe veste, porém, antes de perguntar algo a respeito, surge um homem com uma espingarda apontada à sua cabeça. Dana sente medo de morrer, começa a passar mal e logo em seguida acorda na mesma sala de sua casa. A partir desse momento, inicia-se a apresentação de um ambiente hostil e desconhecido."
+    ],
+    "colors": ["#9E966D", "#017C9A"],
+    "audio": "/assets/audios/example.mp3",
+    "sectionTime": 60000
+  },
+  {
+    "id": "chapter-2",
+    "title": "Segunda Viagem",
+    "images": [
+      "/assets/images/chapter-2/scene1.jpeg",
+      "/assets/images/chapter-2/scene2.jpeg"
+    ],
+    "texts": [
+      "Mais uma vez Dana passa mal e acorda em outro lugar. Novamente ela salva o garoto Rufus de mais problemas, tendo uma conversa que clareia nossas primeiras impressões da história, após Rufus revelar o ano em que estão presentes, 1719, e o estado em que estava, Maryland. Assim, Dana entende todo o drama e agressividade do pais do garoto: Dana estava no sul dos Estados Unidos pré-Guerra Civil, um ambiente extremamente hostil e perigoso para uma pessoa negra como ela. Dana relaciona o sobrenome de uma antiga avó (Hagar Weylin) com o sobrenome de Rufus, levantando as primeiras suspeitas das suas conexões familiares com o garoto.",
+      "A obra enfatiza o extremo racismo presente naquela sociedade juntamente com a sociedade escravista dos estados do Sul dos Estados Unidos. A autora descreve de forma detalhada a agressão do pai da personagem Alice - escrava livre e amiga do Rufus - pelos capatazes, reforçando a angústia causada pela ação desumana."
+    ],
+    "colors": ["#C86800", "#471A00"],
+    "audio": "/assets/audios/segunda.mp3",
+    "sectionTime": 60000
+  },
+  {
+    "id": "chapter-3",
+    "title": "Terceira Viagem",
+    "images": [
+      "/assets/images/chapter-3/scene1.jpeg",
+      "/assets/images/chapter-3/scene2.jpeg"
+    ],
+    "texts": [
+      "Dana volta machucada de sua segunda viagem, após ser atacada por capatazes que procuravam por outra escrava, Alice, conhecida pela família Weylin. Embora tenha presenciado um passado onde negros ainda eram escravizados, torturados e mortos, em sua época o racismo ainda existia (e fortemente): isto é o que livro destaca ao interromper a trama principal para explicar como Dana conheceu seu marido Kevin, um homem branco. Ao viajar pela terceira vez, Kevin a segura e consegue viajar com ela para Maryland de 1719.",
+      "Desta vez, Dana passa alguns meses em 1719. Ao ter que se adaptar à uma vida de escrava e se submeter às atrocidades de sua época, Dana conhece melhor as outras pessoas da casa de Rufus, seu pai, Tom Weylin, sua mãe e especialmente os outros escravizados da casa, com quem aprende a conviver: Alice, Sarah, Carrie, Nigel, Tess, entre outros. Dana sente a responsabilidade de ensinar os outros escravizados a ler, mas acaba sendo vista por Tom Weylin, que fica enfurecido; rapidamente, ele a pega pelo braço e começa a açoitá-la com o chicote, produzindo uma dor e sofrimento descritos de forma agonizante pela narradora-personagem. Esta é uma característica muito marcante e presente na obra, que traz destaque ao racismo e patriarcalismo de forma muito direta, muitas vezes causando choque. Dana começa a entender que existe uma real ascendência entre ela e Rufus através de sua avó Hagar, muito provavelmente a partir de Alice."
+    ],
+    "colors": ["#159407", "#3f9afc"],
+    "audio": "/assets/audios/terceira.mp3",
+    "sectionTime": 60000
+  },
+  {
+    "id": "chapter-4",
+    "title": "Quarta Viagem",
+    "images": ["/assets/images/chapter-4/scene1.jpeg"],
+    "texts": [
+      "Embora apreensiva por Kevin não ter voltado com ela da última viagem, Dana se prepara para a sua quarta viagem ao passado, organizando uma bolsa com roupas, remédios, produtos de higiene e uma faca. Agora Rufus já era um rapaz, e os outros escravizados também haviam crescido; infelizmente, Dana também descobre que Kevin havia passado 5 anos sozinho neste Estados Unidos do século 18. Dana começa a conviver melhor com os outros escravizados, se adaptando às rotinas da casa e entendendo o que os outros pensam a seu respeito. O livro nos mostra como, apesar de todo o sofrimento dos negros como escravos, todos tinham sonhos e de certa tentavam resistir ao sistema. Dana reflete como é deprimente o fato de ela ter se condicionado tão rapidamente a este sistema, à subjugação e à escravidão. Após tentar se comunicar com Kevin por meio de cartas várias vezes, Dana o reencontra e os dois conseguem voltar juntos de sua quarta viagem."
+    ],
+    "colors": ["#89421E", "#e59d79"],
+    "audio": "/assets/audios/quarta.mp3",
+    "sectionTime": 800060000
+  },
+  {
+    "id": "chapter-5",
+    "title": "Quinta Viagem",
+    "images": ["/assets/images/chapter-5/scene1.jpeg"],
+    "texts": [
+      "Neste momento Rufus já era um adulto, problemático com a bebida e mostrando todas as más qualidades comuns na sociedade daquela época. Esta viagem é marcada pela relação entre Dana e Rufus, que estava obcecado por ela, mesmo se a tratava como uma escrava comum, da forma mais abusiva que pudesse. Dana continua solícita à Rufus pois sabe que o nascimento de sua avó (Hagar Weylin), depende dele e de Alice. Mergulhada na contradição de manter Alice junto a Rufus e ao mesmo tempo a ajudando a fugir, Dana se vê em situações cada vez mais desafiadoras em sentido moral, fazendo o próprio leitor a se questionar e refletir. O controle e abuso de Rufus sobre Dana chegou até mesmo a prejudicar outros escravos, como no caso do que foi vendido por parecer estar interessado nela. Dana tentou impedir Rufus, que a agrediu com um tapa. Tomada pela culpa, Dana corta seus pulsos."
+    ],
+    "colors": ["#693100", "#2dc894"],
+    "audio": "/assets/audios/quinta.mp3",
+    "sectionTime": 60000
+  },
+  {
+    "id": "chapter-6",
+    "title": "Sexta Viagem",
+    "images": [
+      "/assets/images/chapter-6/scene1.jpeg",
+      "/assets/images/chapter-6/scene2.jpeg"
+    ],
+    "texts": [
+      "Hagar já havia nascido, mas as situações estavam extremas quando Dana retornou. Alice havia se suicidado e Rufus chegou a tentar o mesmo. Rufus enlouquece e agora pretende que Dana seja sua amante. Em uma cena agoniante, Rufus tenta tomar controle de Dana, que fica sem escolha a não ser se defender, dando duas facadas no homem. Logo em seguida, ela volta para 1976, mas de forma inusitada, retorna no meio de uma parede, com o braço preso no gesso e madeira.",
+      "A última viagem evidencia a sensação de posse que ainda existia no Rufus, mesmo após as diversas tentativas da personagem principal de influenciá-lo a abandonar o legado escravocrata de sua família. É visível também a enorme instabilidade emocional que o Rufus sofreu devido às diversas facetas acerca do escravismo que lhe eram apresentadas. Por fim, a autora demonstra a relação da Dana com o Rufus na cena em que seu braço fica preso na parede. "
+    ],
+    "colors": ["#791E00", "#2dc894"],
+    "audio": "/assets/audios/sexta.mpeg",
+    "sectionTime": 60000
+  }
+]
+>>>>>>> 5dbe5557f06f10cbe6ae0494733ac32a8bedfca6
