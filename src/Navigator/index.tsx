@@ -1,5 +1,10 @@
 import { AiFillHome, AiOutlineHome } from "react-icons/ai";
-import { FaUserCircle, FaRegUserCircle } from "react-icons/fa";
+import {
+  FaUserCircle,
+  FaRegUserCircle,
+  FaComments,
+  FaRegComments,
+} from "react-icons/fa";
 
 import "./Navigator.css";
 
@@ -18,13 +23,24 @@ type Author = {
   id: string;
 };
 
+type Comments = {
+  isActive: boolean;
+  id: string;
+};
+
 interface NavigatorProps {
   home: Home;
+  comments: Comments;
   author: Author;
   chapters: Chapter[];
 }
 
-const Navigator: React.FC<NavigatorProps> = ({ home, author, chapters }) => {
+const Navigator: React.FC<NavigatorProps> = ({
+  home,
+  author,
+  comments,
+  chapters,
+}) => {
   return (
     <>
       <nav>
@@ -44,6 +60,13 @@ const Navigator: React.FC<NavigatorProps> = ({ home, author, chapters }) => {
             <div />
           </a>
         ))}
+        <a href={`#${comments.id}`}>
+          {comments.isActive ? (
+            <FaComments size="28" color="#c54747" className="nav-item" />
+          ) : (
+            <FaRegComments size="28" color="#c54747" className="nav-item" />
+          )}
+        </a>
         <a href={`#${author.id}`}>
           {author.isActive ? (
             <FaUserCircle size="28" color="#c54747" className="nav-item" />

@@ -72,14 +72,31 @@ main#title a svg {
 	animation: BounceAnimation 3s infinite;
 }
 
-div#author {
+div#author, div#comments {
   display: flex;
   height: 85%;
 
   align-items: center;
   background-color: #fff;
-  justify-content: center;
   padding: 0 10% 0 10%;
+  justify-content: center;
+}
+
+div#comments {
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 24px;
+  min-height: 100%;
+}
+
+div#comments h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+div#comments p {
+  font-family: Roboto;
+  font-size: 1.2rem;
 }
 
 div#author div {

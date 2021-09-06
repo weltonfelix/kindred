@@ -28,6 +28,10 @@ function App() {
           id: "author",
           isActive: true,
         }}
+        comments={{
+          id: "comments",
+          isActive: true,
+        }}
         chapters={[
           { id: "chapter-1", isActive: false },
           { id: "chapter-2", isActive: false },
@@ -68,6 +72,32 @@ function App() {
           />
         ))}
         <div className="snap-section">
+          <div id="comments">
+            <h2>Comentários</h2>
+            <p>
+              A obra utiliza a fantasia para levar o leitor junto com a
+              personagem principal ao século XIX, conseguindo assim nos deixar
+              mais próximo da personagem e transmitir seus sentimentos, de certa
+              forma quebrando a barreira temporal. É como se, assim como a
+              personagem, o leitor também pudesse se ver no período que é
+              retratado.
+            </p>
+            <p>
+              A escrita simples do livro contribui ainda mais para isso, como se
+              fosse uma conversa entre o leitor e a personagem. Além disso, a
+              forma como as cenas mais tensas são descritas nos permite entender
+              um pouco mais como a personagem está se sentindo.
+            </p>
+            <p>
+              A forma como a personagem principal é imersa no ambiente
+              escravista e submetida à escravidão nos faz refletir sobre o como
+              a escravidão era, infelizmente, algo tratado como completamente
+              normal naquela época e como ela é levada a aceitar sua posição de
+              escravizada tão facilmente, assim como ela própria narra no livro.
+            </p>
+          </div>
+        </div>
+        <div className="snap-section">
           <div id="author">
             <div>
               <h2>Sobre a autora</h2>
@@ -79,7 +109,13 @@ function App() {
                 <i>Kindred</i>, <i>The Patternist Series</i>,
                 <i>The Xenogenesis Series</i> e <i>Parable</i>.
               </p>
-              <p id="citation"><i>"Comecei a escrever sobre poder já que eu tinha tão pouco dele"</i> - Octavia E. Butler, “The Science Fiction of Octavia Butler”</p> 
+              <p id="citation">
+                <i>
+                  "Comecei a escrever sobre poder já que eu tinha tão pouco
+                  dele"
+                </i>{" "}
+                - Octavia E. Butler, “The Science Fiction of Octavia Butler”
+              </p>
             </div>
             <img src="octaviabutler.png" alt="Octavia Butler" />
           </div>
