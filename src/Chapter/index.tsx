@@ -1,122 +1,83 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./Chapter.css";
 
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
-import VisibilitySensor from "react-visibility-sensor";
-import ReactHowler from "react-howler";
+import { usePalette } from "react-palette";
+import Modal from "react-modal";
+
+interface Coords {
+  left: number;
+  top: number;
+}
 
 interface ChapterProps {
   id?: string;
-  colors?: string[];
   title?: string;
-  images: string[];
+  image: string;
   texts: string[];
-  audio?: string;
-  sectionTime?: number;
+  titles: string[];
+  coords: Coords[];
 }
 
 const Chapter: React.FC<ChapterProps> = ({
   id,
-  colors,
   title,
-  images,
+  image,
   texts,
-  audio,
-  sectionTime,
+  titles,
+  coords,
 }) => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [textsActiveList, setTextsActiveList] = useState([
-    "active",
-    ...Array(images.length - 1).fill(""),
-  ]);
-  const [chapterVisibility, setChapterVisibility] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const [currentModalIndex, setCurrentModalIndex] = useState(0);
 
-  useEffect(() => {
-    let newTextList = textsActiveList.map((text, text_index) => {
-      if (text_index === currentImageIndex) {
-        return "active";
-      } else if (text === "active") {
-        return "";
-      } else return "";
-    });
-    setTextsActiveList(newTextList);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [currentImageIndex]);
+  const { data } = usePalette(image);
 
-  function updateCurrentImage(index: number) {
-    setCurrentImageIndex(index);
+  function openModal(modalIndex: number) {
+    setShowModal(true)
+    setCurrentModalIndex(modalIndex)
   }
 
-  function handleTextClick(index: number) {
-    updateCurrentImage(index);
-  }
-
-  function changeChapterVisibility(state: boolean) {
-    setChapterVisibility(state);
+  function closeModal() {
+    setShowModal(false)
   }
 
   return (
     <>
-      <ReactHowler
-        src={`${audio}`}
-        format={["mp3", "mpeg"]}
-        preload={false}
-        onLoad={() => console.log("oi")}
-        onLoadError={() => console.log("oi")}
-        playing={chapterVisibility}
-        loop={true}
-      />
-      <VisibilitySensor onChange={(event) => changeChapterVisibility(event)}>
-        <div
-          id={id}
-          className="chapter-container"
-          style={
-            colors && {
-              background: `linear-gradient(220deg, ${colors[0]}, ${colors[1]})`,
-              backgroundSize: "150% 150%",
-            }
-          }
-        >
-          <div className="chapter">
-            {title && <h1 className="chapter-title">{title}</h1>}
-            <div className="chapter-content" id={`${id}-content`}>
-              <div className="chapter-carousel">
-                <Carousel
-                  emulateTouch={true}
-                  infiniteLoop={true}
-                  autoPlay={true}
-                  interval={sectionTime ? sectionTime / images.length : 5000}
-                  showThumbs={false}
-                  showStatus={false}
-                  showIndicators={false}
-                  dynamicHeight={true}
-                  onChange={updateCurrentImage}
-                  selectedItem={currentImageIndex}
-                >
-                  {images.map((url, index) => (
-                    <img key={index} src={url} alt={`scene-${index}`} />
-                  ))}
-                </Carousel>
-              </div>
-              <div className="chapter-texts">
-                <div className="texts-container">
-                  {texts.map((text, index) => (
-                    <p
-                      key={index}
-                      className={textsActiveList[index]}
-                      id={`${index}`}
-                      onClick={() => handleTextClick(index)}
-                    >
-                      {text}
-                    </p>
-                  ))}
-                </div>
-              </div>
+      <Modal
+      isOpen={showModal}
+      onRequestClose={closeModal}>
+        <h1 className="modal-title">{titles[currentModalIndex]}</h1>
+        <p className="modal-text">{texts[currentModalIndex]}</p>
+      </Modal>
+      <div
+        id={id}
+        className="chapter-container"
+        style={{
+          background: `linear-gradient(220deg, ${data.darkMuted}, ${data.darkVibrant})`,
+          backgroundSize: "300% 300%",
+        }}
+      >
+        <div className="chapter">
+          <h1 className="chapter-title" style={{ color: '#fff' }}>
+            {title}
+          </h1>
+          <div className="chapter-content" id={`${id}-content`}>
+            <img
+              alt={title}
+              src={image}
+              style={{ border: `10px solid ${data.vibrant}`}}
+            />
+            <div className="imap">
+              {coords.map((coord, index) => (
+                <div
+                  onClick={() => openModal(index)}
+                  className="imap-item"
+                  style={{ left: coord.left, top: coord.top }}
+                ></div>
+              ))}
             </div>
           </div>
         </div>
-      </VisibilitySensor>
+      </div>
     </>
   );
 };

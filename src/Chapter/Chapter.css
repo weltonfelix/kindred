@@ -1,9 +1,9 @@
 div.chapter-container {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   z-index: 1;
 
-  padding: 3% 8% 3% 8%;
+  padding: 3% 50pt 2% 50pt;
 
   scroll-snap-align: start;
 
@@ -12,86 +12,82 @@ div.chapter-container {
   animation: BackgroundPositionAnimation 10s ease infinite;
 }
 
-.chapter {
-  height: 100%;
-}
-
 h1.chapter-title {
-  font-size: 3rem;
-  color: #ffffff;
-  padding-bottom: 3%;
+  font-size: 4rem;
+  color: #ffff;
+  padding-bottom: 2%;
+  text-align: center;
 }
 
 div.chapter-content {
-  height: 88%;
-  width: 100%;
+  display: flex;
+  justify-content: center;
 
-  display: grid;
-  grid-template-columns: 1.05fr 0.9fr;
-  gap: 1.2rem;
-  grid-template-rows: 1fr;
+  position: relative;
+  height: 80%; /* this might overflow images */
 }
 
-div.chapter-content .chapter-carousel {
-  max-height: 100%;
-  max-width: 100%;
+div.chapter-content img {
+  max-width:100%;
+  max-height:100%;
 
-  border-radius: 8px;
+  position: absolute;
 }
 
-div.chapter-content .chapter-carousel img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
 
-  border-radius: 8px;
+div.chapter-content .imap {
+  position: absolute;
+  max-width:100%;
+  max-height:100%;
 }
 
-div.chapter-content .chapter-texts {
-  background-color: #ffffffd3;
-  border-radius: 8px;
-  box-shadow: 1px 1px 100px rgba(0, 0, 0, 0.404);
-
-  height: fit-content;
-  max-height: 70vh; /* yeah... kind of risky */
-  overflow-y: scroll;
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px rgba(255, 251, 0, 0.342);
+  }
+  100% {
+    box-shadow: 0 0 0 10px rgba(217, 255, 0, 0);
+  }
 }
 
-div.chapter-content .chapter-texts::-webkit-scrollbar {
-  display: block !important;
-  width: 5px;
-  background-color: rgba(184, 184, 184, 0.123);
-}
-
-div.chapter-content .chapter-texts::-webkit-scrollbar-thumb {
-  background: rgba(141, 141, 141, 0.418);
-  height: 5px;
-}
-
-div.chapter-content .chapter-texts .texts-container {
-  font-size: 1.5rem;
-  font-family: Roboto, sans-serif;
-  color: #b9b9b9;
-  padding: 10%;
-  overflow-y: scroll;
-
-  transition: 0.5s;
-}
-
-div.chapter-content .chapter-texts .texts-container p {
+div.chapter-content .imap .imap-item {
+  position: absolute;
+  padding: 10px;
   cursor: pointer;
+
+  background-color: rgba(255, 251, 0, 0.342);
+
+  animation: pulse-animation 3s infinite;
+
+  border-radius: 100%;
+  z-index: 1;
+  transition: 0.8s;
 }
 
-div.chapter-content .chapter-texts .texts-container p + p {
-  margin-top: 10%;
+.ReactModal__Overlay {
+  z-index: 5;
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
 }
 
-div.chapter-content .chapter-texts .texts-container .active {
-  font-size: 1.6rem;
-  font-weight: 600;
-  color: #000;
-  transition: 0.5s;
+.ReactModal__Overlay--after-open{
+  opacity: 1;
 }
+
+.ReactModal__Overlay--before-close{
+  opacity: 0;
+}
+
+.modal-title {
+  font-size: 5rem;
+}
+
+.modal-text {
+  font-size: 2rem;
+  margin-top: 30px;
+}
+
+
 
 @media (max-width: 768px) {
   div.chapter-container {
@@ -108,24 +104,5 @@ div.chapter-content .chapter-texts .texts-container .active {
     grid-template-columns: 1fr;
     gap: 0.8rem;
     grid-template-rows: 1fr 1fr;;
-  }
-  div.chapter-content .chapter-carousel {
-    max-height: 100%;
-    max-width: 100%;
-  }
-
-  div.chapter-content .chapter-texts {
-    height: fit-content;
-    max-height: 37vh; /* yeah... kind of risky */
-    overflow-y: scroll;
-  }
-
-  div.chapter-content .chapter-texts .texts-container {
-    font-size: 1rem;
-    font-weight: 500;
-  }
-
-  div.chapter-content .chapter-texts .texts-container .active {
-    font-size: 1.2rem;
   }
 }

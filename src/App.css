@@ -15,11 +15,11 @@ div.snap-section {
 }
 
 header.instructions {
-  background-color: #c54747;
-  color: rgba(233, 233, 233, 0.568);
-  font-size: 0.9rem;
-  text-align: center;
-  padding: 20px;
+  background-color: #a66c59;
+  color: #ffd9b1;
+  font-size: 1rem;
+  text-align: left;
+  padding: 40px 50pt 0px 50pt;
 }
 
 main#title {
@@ -28,26 +28,34 @@ main#title {
 }
 
 main#title {
-  background: #c54747;
-  color: #ffffff;
+  background: #a66c59;
+  color: #ffd9b1;
+
+  padding: 0 50pt 0 50pt;
 
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   justify-content: center;
 }
 
 main#title h1 {
-  font-size: 5rem;
+  font-size: 10rem;
+}
+main#title h3 {
+  font-size: 3.5rem;
+  font-weight: 400;
 }
 
 main#title a {
   background-color: rgba(0, 0, 0, 0.1);
+  width: 12rem;
   border: none;
-  padding: 1rem;
-  margin-top: 15vh;
+  padding: 1.4rem;
+  margin-top: 8vh;
+  margin-bottom: 8vh;
   border-radius: 0.5rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   transition: background-color 0.5s;
@@ -58,14 +66,14 @@ main#title a:hover {
 }
 
 main#title a p {
-  font-size: 1rem;
-  font-weight: bold;
-  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #ffd9b1;
   margin-bottom: 0.5rem;
 }
 
 main#title a svg {
-  margin-top: 8px;
+  margin-bottom: -7px;
 
   -moz-animation: BounceAnimation 3s infinite;
 	-webkit-animation: BounceAnimation 3s infinite;

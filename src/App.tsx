@@ -10,6 +10,8 @@ import "./App.css";
 import chaptersContent from "./chapters.json";
 import { useState } from "react";
 
+import ReactHowler from "react-howler";
+
 function App() {
   const [scrollLock, setScrollLock] = useState(true);
 
@@ -19,7 +21,7 @@ function App() {
 
   return (
     <>
-      <Navigator
+      {/* <Navigator
         home={{
           id: "title",
           isActive: true,
@@ -39,7 +41,23 @@ function App() {
           { id: "chapter-4", isActive: false },
           { id: "chapter-5", isActive: false },
           { id: "chapter-6", isActive: false },
+          { id: "chapter-7", isActive: false },
+          { id: "chapter-8", isActive: false },
+          { id: "chapter-9", isActive: false },
+          { id: "chapter-10", isActive: false },
+          { id: "chapter-11", isActive: false },
+          { id: "chapter-12", isActive: false },
+          { id: "chapter-13", isActive: false }
         ]}
+      /> */}
+      <ReactHowler
+        src={'/assets/audios/lamentosertanejo.mp3'}
+        format={["mp3", "mpeg"]}
+        preload={false}
+        onLoad={() => console.log("iniciando áudio")}
+        onLoadError={() => console.warn("deu ruim aí no áudio mané")}
+        playing={!scrollLock}
+        loop={true}
       />
       <div
         onClick={enableScroll}
@@ -51,11 +69,11 @@ function App() {
             <p>Tenha uma melhor experiência no computador, apertando F11</p>
           </header>
           <main id="title">
-            <h1>Kindred</h1>
-            <h3>Octavia Butler</h3>
+            <h1>Vidas Secas</h1>
+            <h3>Graciliano Ramos</h3>
             <a onClick={enableScroll} href="#chapter-1">
               <p>Começar</p>
-              <ArrowDown color="#ffffff" size="32" />
+              <ArrowDown color="#ffd9b1" size="32" />
             </a>
           </main>
         </div>
@@ -64,11 +82,10 @@ function App() {
             key={index}
             id={chapter.id}
             title={chapter.title}
-            colors={chapter.colors}
-            images={chapter.images}
+            image={chapter.image}
+            titles={chapter.titles}
             texts={chapter.texts}
-            audio={chapter.audio}
-            sectionTime={chapter.sectionTime}
+            coords={chapter.coords}
           />
         ))}
         <div className="snap-section">
