@@ -2,7 +2,7 @@ import { IoIosArrowDown as ArrowDown } from "react-icons/io";
 import { BiCodeAlt } from "react-icons/bi";
 
 import Chapter from "./Chapter";
-import Navigator from "./Navigator";
+// import Navigator from "./Navigator";
 
 import "./global.css";
 import "./App.css";
