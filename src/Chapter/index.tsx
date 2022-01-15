@@ -43,6 +43,21 @@ const Chapter: React.FC<ChapterProps> = ({
   return (
     <>
       <Modal
+      style={{
+        overlay: {
+          backgroundColor: '#57575785',
+        },
+        content: {
+          position: 'fixed',
+          textAlign: 'center',
+          maxWidth: '50%',
+          top: '50%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
+          borderRadius: 0,
+          border: `8px solid ${data.vibrant}`
+        }
+      }}
       isOpen={showModal}
       onRequestClose={closeModal}>
         <h1 className="modal-title">{titles[currentModalIndex]}</h1>
@@ -56,7 +71,6 @@ const Chapter: React.FC<ChapterProps> = ({
           backgroundSize: "300% 300%",
         }}
       >
-        <div className="chapter">
           <h1 className="chapter-title" style={{ color: '#fff' }}>
             {title}
           </h1>
@@ -71,12 +85,11 @@ const Chapter: React.FC<ChapterProps> = ({
                 <div
                   onClick={() => openModal(index)}
                   className="imap-item"
-                  style={{ left: coord.left, top: coord.top }}
+                  style={{ left: `${coord.left}px`, top: `${coord.top}px` }}
                 ></div>
               ))}
             </div>
           </div>
-        </div>
       </div>
     </>
   );
