@@ -50,7 +50,7 @@ const Chapter: React.FC<ChapterProps> = ({
         content: {
           position: 'fixed',
           textAlign: 'center',
-          maxWidth: '50%',
+          maxWidth: '30%',
           top: '50%',
           left: '50%',
           transform: 'translate(-50%, -50%)',
