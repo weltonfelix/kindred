@@ -1,317 +1,315 @@
 [
-    {
-        "id": "chapter-1",
-        "title": "Mudança",
-        "image": "/assets/images/chapter-1.png",
-        "texts": [
-            "O autor consegue nos ambientar e contextualizar na sofrida viagem que a família faz. É quase como se púdessemos sentir o calor, a sede e a dor de estar andando a horas na busca de sombra.",
-            "Somos apresentados à uma família de retirantes que vaga pelo Sertão em busca de um lugar para se estabelecer. O Pai, Fabiano, e a mãe, Sinha Vitória, levam os dois filhos e a cadela, Baleia, pela Caatinga.",
-            "Logo de início começamos a entender a relação dessa família, que endurecida pela míseria e dificuldades, pouco se comunica. Isso ficará visível ao longo da obra, quando a maior parte das reflexões e pensamentos são apresentadas pelo narrador, e não nos diálogos"
-        ],
-        "titles": [
-            "Calor",
-            "Apresentação",
-            "Família"
-        ],
-        "coords": [
-            {
-                "left": 0,
-                "top": 50
-            },
-            {
-                "left": -190,
-                "top": 310
-            },
-            {
-                "left": 70,
-                "top": 320
-            }
-        ]
-    },
-    {
-        "id": "chapter-2",
-        "title": "Fabiano",
-        "image": "/assets/images/chapter-2.png",
-        "texts": [
-            "Neste capítulo conhecemos mais ao fundo a personalidade de Fabiano, responsável pelo sustento da família, se preocupa com sua família. Depois de encontrarem uma fazenda deserta, onde podem ficar, Fabiano alimenta suas esperanças.",
-            "Fabiano reflete como se dá melhor com os animais do que com os homens: ‘Montado, confundia-se com o cavalo, grudava-se a ele.’ Ele diz a si mesmo que é um bicho, quase se comparando à cadela Baleia. Isso, na verdade, é motivo de orgulho para ele, dizendo ser um ser capaz de atravessar dificuldades",
-            "Fabiano considera os filhos muito curiosos, muito perguntadores, algo que seria prejudicial a eles. Segundo ele, se fossem aprender algo, logo iriam querer mais, sem nunca se saciar. De certa forma, Fabiano estava certo."
-        ],
-        "titles": [
-            "Homem",
-            "Bicho",
-            "Perguntadores"
-        ],
-        "coords": [
-            {
-                "left": 15,
-                "top": 140
-            },
-            {
-                "left": 200,
-                "top": 330
-            },
-            {
-                "left": -350,
-                "top": 200
-            }
-        ]
-    },
-    {
-        "id": "chapter-3",
-        "title": "Cadeia",
-        "image": "/assets/images/chapter-3.png",
-        "texts": [
-            "Neste episódio inesperado, Fabiano se espanta com a atitude do soldado, um representante do governo, instituição infalível, que ‘não podia errar’. Este trecho levanta questões importantes, como o abuso de poder e discriminação por parte das autoridades.",
-            "Fabiano sai para ir à feira, mas acaba sendo desafiado por um soldado para um jogo e perde. Ele sai, incomodando o soldado, que o bate e prende injustamente. Na cadeia, se arrepende do que aconteceu e pensa na sua família, sozinha em casa.",
-            "Com raiva, se irrita com os companheiros de cela e grita. Ele pensa como a educação talvez ajudaria a escolher as palavras certas ou falar melhor, assim como Seu Tomás da bolandeira, seu antigo patrão."
-        ],
-        "titles": [
-            "Governo",
-            "Feira",
-            "Falatório"
-        ],
-        "coords": [
-            {
-                "left": -150,
-                "top": 80
-            },
-            {
-                "left": -280,
-                "top": 220
-            },
-            {
-                "left": 20,
-                "top": 370
-            }
-        ]
-    },
-    {
-        "id": "chapter-4",
-        "title": "Sinha Vitoria",
-        "image": "/assets/images/chapter-4.png",
-        "texts": [
-            "As aflições de Sinha Vitória canalizam em sua cama, feita de varas, com um nó no meio, a deixando ainda mais desconfortável. Embora a figura de Fabiano a tranquilize, se irrita com ele por não ter uma cama de verdade, feita de couro, como a de Seu Tomás da bolandeira.",
-            "Este capítulo nos mostra um pouco da rotina de Sinha Vitória, que pensa sobre a situação de sua família. Embora o incômodo da cama seja recorrente, Sinha Vitoria constantemente se lembra da viagem até a fazenda onde estão, o medo de perdê-la e o medo da seca."
-        ],
-        "titles": [
-            "Cama",
-            "Rotina"
-        ],
-        "coords": [
-            {
-                "left": -30,
-                "top": 400
-            },
-            {
-                "left": -60,
-                "top": 100
-            }
-        ]
-    },
-    {
-        "id": "chapter-5",
-        "title": "O menino mais novo",
-        "image": "/assets/images/chapter-5.png",
-        "texts": [
-            "Este capítulo revela a admiração do menino mais novo ao pai. Ao vê-lo montar num cavalo, se inspira a fazer o mesmo.",
-            "O menino mais novo se espelha no pai e agora deseja montar num bode. Ele tenta conter o animal, buscando a aprovação do irmão e mãe, mas sem sucesso. Ele tenta afirmar como um homem crescido, mas é reprovado pela mãe e motivo de risadas para o irmão."
-        ],
-        "titles": [
-            "Admiração",
-            "Um homem"
-        ],
-        "coords": [
-            {
-                "left": -110,
-                "top": 325
-            },
-            {
-                "left": 90,
-                "top": 220
-            }
-        ]
-    },
-    {
-        "id": "chapter-6",
-        "title": "O menino mais velho",
-        "image": "/assets/images/chapter-6.png",
-        "texts": [
-            "O menino mais velho se interessa por uma palavra - ‘inferno’ - algo incomum num contexto familiar onde a linguagem não é valorizada. Novamente, a dificuldade em falar, vista em Fabiano, se reflete no filho mais velho.",
-            "O menino mais velho não entende como essa palavra nova (‘inferno’) pode demosntrar um lugar tão ruim. Em sua inocência, todos os lugares conhecidos - o chiqueiro, o curral, o bebedouro, etc – eram bons."
-        ],
-        "titles": [
-            "Curiosidade",
-            "Tudo é bom"
-        ],
-        "coords": [
-            {
-                "left": 50,
-                "top": 470
-            },
-            {
-                "left": -20,
-                "top": 320
-            }
-        ]
-    },
-    {
-        "id": "chapter-7",
-        "title": "Inverno",
-        "image": "/assets/images/chapter-7.png",
-        "texts": [
-            "Lorem ipsum dolor amet",
-            "Lorem ipsum dolor amet"
-        ],
-        "titles": [
-            "Título 1",
-            "Título 2"
-        ],
-        "coords": [
-            {
-                "left": -60,
-                "top": 100
-            },
-            {
-                "left": -60,
-                "top": 100
-            }
-        ]
-    },
-    {
-        "id": "chapter-8",
-        "title": "Festa",
-        "image": "/assets/images/chapter-8.png",
-        "texts": [
-            "Lorem ipsum dolor amet",
-            "Lorem ipsum dolor amet"
-        ],
-        "titles": [
-            "Título 1",
-            "Título 2"
-        ],
-        "coords": [
-            {
-                "left": -60,
-                "top": 100
-            },
-            {
-                "left": -60,
-                "top": 100
-            }
-        ]
-    },
-    {
-        "id": "chapter-9",
-        "title": "Baleia",
-        "image": "/assets/images/chapter-9.png",
-        "texts": [
-            "O capítulo fala sobre o envelhecimento da cachorra baleia, companheira fiel da família. Devido à sua velhice, Fabiano resolve sacrificá-la, buscando aliviar seu sofrimento. A partir desse momento, o autor passa a descrever de forma lenta cada etapa da morte da cachorra."
-        ],
-        "titles": [
-            "Título 1",
-            "Título 2"
-        ],
-        "coords": [
-            {
-                "left": -60,
-                "top": 100
-            },
-            {
-                "left": -60,
-                "top": 100
-            }
-        ]
-    },
-    {
-        "id": "chapter-10",
-        "title": "Contas",
-        "image": "/assets/images/chapter-10.png",
-        "texts": [
-            "No capítulo percebem-se várias formas de exploração àqueles menos favorecidos e menos escolarizados em meio ao corpo social. Um exemplo é a cobrança do patrão de Fabiano, visando tirar proveito de sua vulnerabilidade. Embora Fabiano questionasse tal realidade, não conseguia livrar-se dela por falta de conhecimento."
-        ],
-        "titles": [
-            "Título 1",
-            "Título 2"
-        ],
-        "coords": [
-            {
-                "left": -60,
-                "top": 100
-            },
-            {
-                "left": -60,
-                "top": 100
-            }
-        ]
-    },
-    {
-        "id": "chapter-11",
-        "title": "Soldado amarelo",
-        "image": "/assets/images/chapter-11.png",
-        "texts": [
-            "Neste capítulo, após encontrar-se com o soldado amarelo, Fabiano revive o trauma causado pelo episódio ocorrido na venda de Seu Inácio um ano antes, bem como sua consequente prisão e noite no cárcere. Ao final do capítulo, o personagem controla seus sentimentos e escolhe não atacar o oficial, mesmo estando em condição amplamente favorável, e decide submeter-se à autoridade do Estado deixando o soldado passar.",
-            "O autor utiliza de artifícios para expôr a impotência das classes sociais menos favorecidas perante o sistema social."
-        ],
-        "titles": [
-            "Título 1",
-            "Título 2"
-        ],
-        "coords": [
-            {
-                "left": -60,
-                "top": 100
-            },
-            {
-                "left": -60,
-                "top": 100
-            }
-        ]
-    },
-    {
-        "id": "chapter-12",
-        "title": "Mundo coberto de penas",
-        "image": "/assets/images/chapter-12.png",
-        "texts": [
-            "Nesta passagem, o autor ."
-        ],
-        "titles": [
-            "Título 1",
-            "Título 2"
-        ],
-        "coords": [
-            {
-                "left": -60,
-                "top": 100
-            },
-            {
-                "left": -60,
-                "top": 100
-            }
-        ]
-    },
-    {
-        "id": "chapter-13",
-        "title": "Fuga",
-        "image": "/assets/images/chapter-13.png",
-        "texts": [
-            "Lorem ipsum dolor amet",
-            "Lorem ipsum dolor amet"
-        ],
-        "titles": [
-            "Título 1",
-            "Título 2"
-        ],
-        "coords": [
-            {
-                "left": -60,
-                "top": 100
-            },
-            {
-                "left": -60,
-                "top": 100
-            }
-        ]
-    }
+  {
+      "id": "chapter-1",
+      "title": "Mudança",
+      "image": "/assets/images/chapter-1.png",
+      "texts": [
+          "O autor consegue nos ambientar e contextualizar na sofrida viagem que a família faz. É quase como se púdessemos sentir o calor, a sede e a dor de estar andando a horas na busca de sombra.",
+          "Somos apresentados à uma família de retirantes que vaga pelo Sertão em busca de um lugar para se estabelecer. O Pai, Fabiano, e a mãe, Sinha Vitória, levam os dois filhos e a cadela, Baleia, pela Caatinga.",
+          "Logo de início começamos a entender a relação dessa família, que endurecida pela míseria e dificuldades, pouco se comunica. Isso ficará visível ao longo da obra, quando a maior parte das reflexões e pensamentos são apresentadas pelo narrador, e não nos diálogos"
+      ],
+      "titles": [
+          "Calor",
+          "Apresentação",
+          "Família"
+      ],
+      "coords": [
+          {
+              "left": 0,
+              "top": 50
+          },
+          {
+              "left": -190,
+              "top": 310
+          },
+          {
+              "left": 70,
+              "top": 320
+          }
+      ]
+  },
+  {
+      "id": "chapter-2",
+      "title": "Fabiano",
+      "image": "/assets/images/chapter-2.png",
+      "texts": [
+          "Neste capítulo conhecemos mais ao fundo a personalidade de Fabiano, responsável pelo sustento da família, se preocupa com sua família. Depois de encontrarem uma fazenda deserta, onde podem ficar, Fabiano alimenta suas esperanças.",
+          "Fabiano reflete como se dá melhor com os animais do que com os homens: ‘Montado, confundia-se com o cavalo, grudava-se a ele.’ Ele diz a si mesmo que é um bicho, quase se comparando à cadela Baleia. Isso, na verdade, é motivo de orgulho para ele, dizendo ser um ser capaz de atravessar dificuldades",
+          "Fabiano considera os filhos muito curiosos, muito perguntadores, algo que seria prejudicial a eles. Segundo ele, se fossem aprender algo, logo iriam querer mais, sem nunca se saciar. De certa forma, Fabiano estava certo."
+      ],
+      "titles": [
+          "Homem",
+          "Bicho",
+          "Perguntadores"
+      ],
+      "coords": [
+          {
+              "left": 15,
+              "top": 140
+          },
+          {
+              "left": 200,
+              "top": 330
+          },
+          {
+              "left": -350,
+              "top": 200
+          }
+      ]
+  },
+  {
+      "id": "chapter-3",
+      "title": "Cadeia",
+      "image": "/assets/images/chapter-3.png",
+      "texts": [
+          "Neste episódio inesperado, Fabiano se espanta com a atitude do soldado, um representante do governo, instituição infalível, que ‘não podia errar’. Este trecho levanta questões importantes, como o abuso de poder e discriminação por parte das autoridades.",
+          "Fabiano sai para ir à feira, mas acaba sendo desafiado por um soldado para um jogo e perde. Ele sai, incomodando o soldado, que o bate e prende injustamente. Na cadeia, se arrepende do que aconteceu e pensa na sua família, sozinha em casa.",
+          "Com raiva, se irrita com os companheiros de cela e grita. Ele pensa como a educação talvez ajudaria a escolher as palavras certas ou falar melhor, assim como Seu Tomás da bolandeira, seu antigo patrão."
+      ],
+      "titles": [
+          "Governo",
+          "Feira",
+          "Falatório"
+      ],
+      "coords": [
+          {
+              "left": -150,
+              "top": 80
+          },
+          {
+              "left": -280,
+              "top": 220
+          },
+          {
+              "left": 20,
+              "top": 370
+          }
+      ]
+  },
+  {
+      "id": "chapter-4",
+      "title": "Sinha Vitoria",
+      "image": "/assets/images/chapter-4.png",
+      "texts": [
+          "As aflições de Sinha Vitória canalizam em sua cama, feita de varas, com um nó no meio, a deixando ainda mais desconfortável. Embora a figura de Fabiano a tranquilize, se irrita com ele por não ter uma cama de verdade, feita de couro, como a de Seu Tomás da bolandeira.",
+          "Este capítulo nos mostra um pouco da rotina de Sinha Vitória, que pensa sobre a situação de sua família. Embora o incômodo da cama seja recorrente, Sinha Vitoria constantemente se lembra da viagem até a fazenda onde estão, o medo de perdê-la e o medo da seca."
+      ],
+      "titles": [
+          "Cama",
+          "Rotina"
+      ],
+      "coords": [
+          {
+              "left": -30,
+              "top": 400
+          },
+          {
+              "left": -60,
+              "top": 100
+          }
+      ]
+  },
+  {
+      "id": "chapter-5",
+      "title": "O menino mais novo",
+      "image": "/assets/images/chapter-5.png",
+      "texts": [
+          "Este capítulo revela a admiração do menino mais novo ao pai. Ao vê-lo montar num cavalo, se inspira a fazer o mesmo.",
+          "O menino mais novo se espelha no pai e agora deseja montar num bode. Ele tenta conter o animal, buscando a aprovação do irmão e mãe, mas sem sucesso. Ele tenta afirmar como um homem crescido, mas é reprovado pela mãe e motivo de risadas para o irmão."
+      ],
+      "titles": [
+          "Admiração",
+          "Um homem"
+      ],
+      "coords": [
+          {
+              "left": -110,
+              "top": 325
+          },
+          {
+              "left": 90,
+              "top": 220
+          }
+      ]
+  },
+  {
+      "id": "chapter-6",
+      "title": "O menino mais velho",
+      "image": "/assets/images/chapter-6.png",
+      "texts": [
+          "O menino mais velho se interessa por uma palavra - ‘inferno’ - algo incomum num contexto familiar onde a linguagem não é valorizada. Novamente, a dificuldade em falar, vista em Fabiano, se reflete no filho mais velho.",
+          "O menino mais velho não entende como essa palavra nova (‘inferno’) pode demosntrar um lugar tão ruim. Em sua inocência, todos os lugares conhecidos - o chiqueiro, o curral, o bebedouro, etc – eram bons."
+      ],
+      "titles": [
+          "Curiosidade",
+          "Tudo é bom"
+      ],
+      "coords": [
+          {
+              "left": 50,
+              "top": 470
+          },
+          {
+              "left": -20,
+              "top": 320
+          }
+      ]
+  },{
+      "id": "chapter-7",
+      "title": "Inverno",
+      "image": "/assets/images/chapter-7.png",
+      "texts": [
+          "No capítulo, o autor desmistifica a ideia pré-concebida de que no sertão a seca é constante. Para isso, há o relato de uma enchente e dos desdobramentos do fenômeno na vida dos protagonistas.",
+"O texto abre margem para reflexões do leitor acerca de condições de moradia e qualidade de vida visto que a família é afetada pelo frio."
+      ],
+      "titles": [
+          "Clima e Vegetação",
+          "Vida da família"
+      ],
+      "coords": [
+          {
+              "left": -60,
+              "top": 100
+          },
+          {
+              "left": -60,
+              "top": 100
+          }
+      ]
+  },
+  {
+      "id": "chapter-8",
+      "title": "Festa",
+      "image": "/assets/images/chapter-8.png",
+      "texts": [
+          "No episódio, o autor destaca a influência católica nas festividades de cidades interioranas. Além disso, a família sente-se deslocada dos costumes citadinos.", "Posteriormente, Graciliano Ramos aproveita o espaço social para ressaltar a \"brutalidade\" de Fabiano (bruto, sim senhor)."
+      ],
+      "titles": [
+          "Cidade",
+          "Fabiano"
+      ],
+      "coords": [
+          {
+              "left": -60,
+              "top": 100
+          },
+          {
+              "left": -60,
+              "top": 100
+          }
+      ]
+  },
+  {
+      "id": "chapter-9",
+      "title": "Baleia",
+      "image": "/assets/images/chapter-9.png",
+      "texts": [
+          "O capítulo fala sobre o envelhecimento da cachorra baleia, companheira fiel da família. Devido à sua velhice, Fabiano resolve sacrificá-la, buscando aliviar seu sofrimento.",
+"A partir desse momento, o autor passa a descrever de forma lenta cada etapa da morte da cachorra.",
+      ],
+      "titles": [
+          "Cachorra",
+          "Espingarda"
+      ],
+      "coords": [
+          {
+              "left": -60,
+              "top": 100
+          },
+          {
+              "left": -60,
+              "top": 100
+          }
+      ]
+  },
+  {
+      "id": "chapter-10",
+      "title": "Contas",
+      "image": "/assets/images/chapter-10.png",
+      "texts": [
+          "No capítulo percebem-se várias formas de exploração àqueles menos favorecidos e menos escolarizados em meio ao corpo social. Um exemplo é a cobrança do patrão de Fabiano, visando tirar proveito de sua vulnerabilidade. Embora Fabiano questionasse tal realidade, não conseguia livrar-se dela por falta de conhecimento."
+      ],
+      "titles": [
+          "Juros"
+      ],
+      "coords": [
+          {
+              "left": -60,
+              "top": 100
+          },
+          {
+              "left": -60,
+              "top": 100
+          }
+      ]
+  },
+  {
+      "id": "chapter-11",
+      "title": "Soldado amarelo",
+      "image": "/assets/images/chapter-11.png",
+      "texts": [
+          "Neste capítulo, após encontrar-se com o soldado amarelo, Fabiano revive o trauma causado pelo episódio ocorrido na venda de Seu Inácio um ano antes, bem como sua consequente prisão e noite no cárcere. Ao final do capítulo, o personagem controla seus sentimentos e escolhe não atacar o oficial, mesmo estando em condição amplamente favorável, e decide submeter-se à autoridade do Estado deixando o soldado passar.",
+          "O autor utiliza de artifícios para expôr a impotência das classes sociais menos favorecidas perante o sistema social."
+      ],
+      "titles": [
+          "Facão",
+          "Soldado Amarelo"
+      ],
+      "coords": [
+          {
+              "left": -60,
+              "top": 100
+          },
+          {
+              "left": -60,
+              "top": 100
+          }
+      ]
+  },
+  {
+      "id": "chapter-12",
+      "title": "Mundo coberto de penas",
+      "image": "/assets/images/chapter-12.png",
+      "texts": [
+          "Nesta passagem, o autor começa a dar sinais da chegada da seca. Em razão disso, Fabiano - o personagem principal da trama - passa a procurar culpados para a aproximação desse mal. Em tempos hodiernos seria de senso comum atribuir a responsabilidade da problemática a fatores climáticos naturais."
+      ],
+      "titles": [
+          "Aves"
+      ],
+      "coords": [
+          {
+              "left": -60,
+              "top": 100
+          },
+          {
+              "left": -60,
+              "top": 100
+          }
+      ]
+  },
+  {
+      "id": "chapter-13",
+      "title": "Fuga",
+      "image": "/assets/images/chapter-13.png",
+      "texts": [
+          "O último capítulo fecha a trama com um olhar esperançoso sobre a situação do sertão, buscando fortalecer as experiências e virtudes da população sertaneja.",
+"Ao mesmo tempo, tem um tom dramático ao tocar na necessidade da população deixar o local onde fincaram raízes afetivas por conta da seca."
+      ],
+      "titles": [
+          "Força sertaneja",
+          "Sertão"
+      ],
+      "coords": [
+          {
+              "left": -60,
+              "top": 100
+          },
+          {
+              "left": -60,
+              "top": 100
+          }
+      ]
+  }
 ]
+
 
